@@ -1,16 +1,22 @@
 # temperatureconverter.py
 
+# fahrenheitToCelsius converts the user-given temperature from
+# Fahrenheit to Celsius, returning Celsius
 def fahrenheitToCelsius(fahrenheit_temp):
     celsius_temp = (fahrenheit_temp - 32) * 5 / 9
     return celsius_temp
 
+# celsiusToFahrenheit converts the user-given temperature from
+# Celsius to Fahrenheit, returning Fahrenheit
 def celsiusToFahrenheit(celsius_temp):
     fahrenheit_temp = 9 / 5 * celsius_temp + 32
     return fahrenheit_temp
 
 
+# main runs a conversion-program using the above functions
 def main():
     while (True):
+        # Constucts a simple user-interface to interact with
         print("\n*****************************************************")
         print("Please choose a conversion:")
         print("1. Fahrenheit to Celsius")
@@ -32,5 +38,3 @@ def main():
             break
         else:
             print("That value is invalid, please enter integers 1 to 3.")
-
-main()
