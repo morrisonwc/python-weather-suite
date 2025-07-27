@@ -1,4 +1,4 @@
-# temperatureconvert.py
+# temperatureconverter.py
 
 def fahrenheitToCelsius(fahrenheit_temp):
     celsius_temp = (fahrenheit_temp - 32) * 5 / 9
